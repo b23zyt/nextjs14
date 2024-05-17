@@ -1,8 +1,8 @@
-import { Inter } from 'next/font/google'
-import Head from 'next/head'
-import './globals.css'
-import Navbar from '@/component/navbar/Navbar'
-import Footer from '@/component/footer/footer'
+import { Inter } from 'next/font/google';
+import Head from 'next/head';
+import './globals.css';
+import Navbar from '@/component/navbar/Navbar';
+import Footer from '@/component/footer/footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,9 +21,11 @@ export default function RootLayout({ children }) {
         <link rel='icon' href='../public/favicon.ico'/>
       </Head>
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <div className='container'>
+          <Navbar />
+            {children}
+          <Footer />
+        </div>
       </body>
     </html>
   )
