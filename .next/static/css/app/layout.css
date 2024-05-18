@@ -96,14 +96,50 @@ a {
 
 .container {
     background-color: rgb(4, 4, 44);
-    width: auto;
+    width: 1536px;
     margin: auto;
     padding-left: 200px;
-    padding-right: 200px;
+    padding-right: 100px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media (max-width: 1536px) {
+    .container {
+        width: 1366px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 1014px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 640px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        width: 475px;
+    }
 }
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/component/navbar/links/links.module.css ***!
@@ -112,6 +148,48 @@ a {
     display: flex;
     align-items: center;
     gap: 13px;
+}
+
+.links_logout__oa69P {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.links_mobileLinks__bStCI {
+    display: none;
+}
+
+.links_menuButton__b58co{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .links_link__WPf42 {
+        display: none;
+    }
+
+    .links_menuButton__b58co {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .links_mobileLinks__bStCI {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 50%;
+        height: auto;
+        background-color: rebeccapurple;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        z-index: 2000;
+    }
 }
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/component/navbar/links/navLink/navLink.module.css ***!
